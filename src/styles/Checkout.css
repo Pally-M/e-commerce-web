@@ -1,0 +1,213 @@
+/* Main container to hold both the checkout sections and the order summary */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; 
+    max-width: 1200px; 
+    margin:auto;
+    margin-top: 10%;
+    font-family: sans-serif;
+    flex-wrap: wrap; 
+    border: radius 19px;
+    
+    
+  }
+  
+  .container {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    width: 60%;
+  }
+  
+  .section {
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0.7em;
+    width: 100%; 
+    margin-bottom: 25px;
+  }
+  
+  .section h3 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+    max-width: 1200px;
+  }
+  
+  
+  
+  .section-actions {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .change-button {
+    border-radius: 0.9rem;
+    cursor: pointer;
+    width: 8rem;
+    height: 2.5rem;
+    background-color: rgb(247, 243, 243);
+    outline-style: solid;
+    outline-color: rgb(35, 34, 34);
+    top: 66px;
+   
+  }
+  
+  
+  
+  
+  .change-button:hover {
+    background-color: darkgray;
+  }
+  
+  #review-your-bag .section-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bag-item {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .product-image-container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  
+  .product-details {
+    flex: 1 1 auto;
+  }
+  
+  .product-details h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+    color: gray;
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    border: 1px solid rgba(65, 56, 56, 0);
+     height: auto;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+    position: stick;
+    top: 0;
+    margin-top: 3%; 
+  }
+  
+  .order-summary h3 {
+    font-size: 2rem;
+    margin-left:0, 1rem;
+    margin-top: 1rem;
+    
+   
+  }
+  
+  .order-summary h4 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+    color: red; 
+  }
+  
+  .order-summary p {
+    margin: 10px 0;
+    color: gray;
+   
+  }
+  
+  .order-summary .summary-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .order-summary .summary-item p {
+    margin: 5px 0;
+    flex: 1;
+  }
+  
+  .order-summary .total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .back-btn {
+    margin-top: 150px;
+    display: flex;
+    justify-content: flex-end;
+    width: 150%;
+  
+    position: fixed; 
+    top: 300px; 
+    right: 250px;
+    z-index: 1000; 
+    
+  
+  }
+  
+  .back-btn .btn4 {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(247, 243, 243);
+    
+    outline-style: solid;
+    outline-color: rgb(19, 18, 18);
+    cursor: pointer;
+  
+    text-align: center; 
+  
+  }
+  
+  .back-btn .btn4:hover {
+    background-color: darkgray;
+  }
+  .back-icon{
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .container, .order-summary {
+        width: 100%;
+    }
+  
+    .order-summary {
+        margin-top: 20px;
+    }
+  }
+  
+  .place-order-btn{
+    width: 14rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(3, 3, 3);
+    color:white;
+    cursor: pointer;
+  }
+  
+  
+  
